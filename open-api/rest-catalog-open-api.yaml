@@ -21,6 +21,10 @@
 openapi: 3.1.1
 info:
   title: Apache Iceberg REST Catalog API
+  contact:
+    name: Apache Iceberg
+    url: https://iceberg.apache.org/
+    email: dev@iceberg.apache.org
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
@@ -28,6 +32,24 @@ info:
   description:
     Defines the specification for the first version of the REST Catalog API.
     Implementations should ideally support all Iceberg table spec versions.
+  x-logo:
+    url: https://iceberg.apache.org/assets/images/Iceberg-logo.svg
+  x-origin:
+    - format: openapi
+      url: https://raw.githubusercontent.com/apache/iceberg/main/open-api/rest-catalog-open-api.yaml
+      version: "3.1"
+  x-providerName: apache.org
+  x-serviceName: iceberg
+  x-description-language: en
+  x-tags:
+    - apache
+    - iceberg
+    - lakehouse
+    - table-format
+    - catalog
+externalDocs:
+  description: Apache Iceberg REST Catalog specification
+  url: https://iceberg.apache.org/rest-catalog-spec/
 servers:
   - url: "{scheme}://{host}/{basePath}"
     description: Server URL when the port can be inferred from the scheme
